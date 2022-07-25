@@ -27,8 +27,5 @@ namespace Application.Exceptions
                 Errors.Add(failure.ErrorMessage);
             }
         }
-
-
-
     }
 }

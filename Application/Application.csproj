@@ -17,8 +17,6 @@
 
   <ItemGroup>
     <Folder Include="DTOs\" />
-    <Folder Include="Features\ToDoTasks\Commands\DeleteToDoTaskCmd\" />
-    <Folder Include="Features\ToDoTasks\Commands\UpdateToDoTaskCmd\" />
     <Folder Include="Features\ToDoTasks\Queries\GetToDoTaskById\" />
     <Folder Include="Features\ToDoTasks\Queries\GetAllToDoTasks\" />
     <Folder Include="Filters\" />

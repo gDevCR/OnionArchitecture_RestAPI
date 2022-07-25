@@ -1,10 +1,10 @@
 ﻿using FluentValidation;
 
-namespace Application.Features.ToDoTasks.Commands.CreateToDoTaskCmd
+namespace Application.Features.ToDoTasks.Commands.UpdateToDoTaskCmd
 {
-    public class CreateToDoTaskValidator : AbstractValidator<CreateToDoTaskCmd>
+    public class UpdateToDoTaskValidator : AbstractValidator<UpdateToDoTaskCmd>
     {
-        public CreateToDoTaskValidator()
+        public UpdateToDoTaskValidator()
         {
             RuleFor(p => p.GroupId)               
                 .NotEmpty().WithMessage("The task must have a group assigned.");
