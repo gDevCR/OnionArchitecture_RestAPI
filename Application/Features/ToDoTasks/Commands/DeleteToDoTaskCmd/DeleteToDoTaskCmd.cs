@@ -31,7 +31,7 @@ namespace Application.Features.ToDoTasks.Commands.DeleteToDoTaskCmd
 
             if(resultData == null)
             {
-                throw new ApiException($"Record not found with id {request.Id}.");
+                throw new KeyNotFoundException($"Record not found with id {request.Id}.");
             }
 
             resultData.IsDeleted = true;

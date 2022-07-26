@@ -9,7 +9,7 @@ namespace Application.Features.ToDoTasks.Commands.UpdateToDoTaskCmd
 {
     public class UpdateToDoTaskCmd : IRequest<Response<int>>
     {
-        public int Id { get; }
+        public int Id { get; set; }
         public int GroupId { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
@@ -36,9 +36,10 @@ namespace Application.Features.ToDoTasks.Commands.UpdateToDoTaskCmd
 
             if(resultData == null)
             {
-                throw new ApiException($"Record not found with id {request.Id}.");
+                throw new KeyNotFoundException($"Record not found with id {request.Id}.");
             }
 
+            resultData.GroupId = request.GroupId;
             resultData.Name = request.Name;
             resultData.Description = request.Description;
             resultData.IsComplete = request.IsComplete;
