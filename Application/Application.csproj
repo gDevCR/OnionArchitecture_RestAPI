@@ -16,7 +16,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="DTOs\" />
+    <Folder Include="Features\TaskGroups\Commands\DeleteTaskGroupCmd\" />
+    <Folder Include="Features\TaskGroups\Commands\UpdateTaskGroupCmd\" />
+    <Folder Include="Features\TaskGroups\Queries\" />
     <Folder Include="Features\ToDoTasks\Queries\GetToDoTaskById\" />
     <Folder Include="Features\ToDoTasks\Queries\GetAllToDoTasks\" />
     <Folder Include="Filters\" />
